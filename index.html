@@ -359,10 +359,11 @@
 
     $("#preview").click(function() {
 
-        cuerpo = editor.getElementValue(true);
+        cuerpo = editor.value;
 
 
-        $("#pbody").text($(cuerpo).text());
+        $("#pbody").empty();
+        $("#pbody").append($(cuerpo));
 
         console.log($(cuerpo).text());
 
